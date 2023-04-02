@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # * My App's
+    'home',
 ]
 
 PASSWORD_HASHERS = [

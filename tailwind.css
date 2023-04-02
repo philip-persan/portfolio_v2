@@ -1,3 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Color Pallet https://coolors.co/palette/131316-1c1c21-26262c-2f3037-393a41-4b4c52-5b5c62-6a6b70 */
+
+* {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  @apply bg-[#131316] w-screen h-screen;
+  scroll-behavior: smooth;
+}
+
+header {
+  @apply sticky top-0 p-8 bg-[#393A41] w-full h-32;
+  @apply flex items-center justify-between;
+  @apply text-white;
+  @apply overflow-hidden;
+}
+
+.logo {
+  @apply text-3xl font-bold overflow-hidden;
+}
+
+header > nav {
+  @apply flex items-center justify-evenly gap-4;
+  @apply text-xl font-semibold;
+}
+
+.content {
+  @apply w-full h-4/5 py-28 px-8;
+  @apply text-white;
+}
+
+.content:nth-child(odd) {
+  @apply bg-[#2F3037];
+}
+
+#home {
+  @apply flex items-center justify-around;
+  @apply w-full h-fit;
+}
+
+#home > .title_info {
+  @apply font-semibold;
+}
+
+#home > .img_profile {
+  @apply h-full;
+}
+
+#home > .img_profile > img {
+  @apply h-1/3;
+}
